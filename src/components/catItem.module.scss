@@ -9,6 +9,15 @@
   @media only screen and (max-width: 320px) {
     width: 280px;
   }
+  .cardLayout {
+    border-color: $idle;
+  }
+  .cardTitle {
+    border-color: $idle;
+  }
+  .weightCircle {
+    background: $idle;
+  }
   .cardTitleSelectedHoverText {
     display: none;
   }
@@ -58,6 +67,15 @@
       $selected 32px,
       transparent 0
     );
+  }
+  .cardLayout {
+    border-color: $selected;
+  }
+  .cardTitle {
+    border-color: $selected;
+  }
+  .weightCircle {
+    background: $selected;
   }
   .cardTitleSelectedHoverText {
     display: none;
