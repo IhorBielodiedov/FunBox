@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TestTask/static/css/main.e21be62c.css",
-    "main.js": "/TestTask/static/js/main.bbf9aa57.js",
-    "static/media/bg.png": "/TestTask/static/media/bg.86b0b328393c3f102912.png",
-    "static/media/Object.png": "/TestTask/static/media/Object.a83eacc15adf593a8935.png",
-    "static/media/Exo2.0-Thin.otf": "/TestTask/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
-    "index.html": "/TestTask/index.html",
-    "main.e21be62c.css.map": "/TestTask/static/css/main.e21be62c.css.map",
-    "main.bbf9aa57.js.map": "/TestTask/static/js/main.bbf9aa57.js.map"
+    "main.css": "/FunBox/static/css/main.5d366009.css",
+    "main.js": "/FunBox/static/js/main.bbf9aa57.js",
+    "static/media/bg.png": "/FunBox/static/media/bg.86b0b328393c3f102912.png",
+    "static/media/Object.png": "/FunBox/static/media/Object.a83eacc15adf593a8935.png",
+    "static/media/Exo2.0-Thin.otf": "/FunBox/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/FunBox/index.html",
+    "main.5d366009.css.map": "/FunBox/static/css/main.5d366009.css.map",
+    "main.bbf9aa57.js.map": "/FunBox/static/js/main.bbf9aa57.js.map"
   },
   "entrypoints": [
-    "static/css/main.e21be62c.css",
+    "static/css/main.5d366009.css",
     "static/js/main.bbf9aa57.js"
   ]
 }
