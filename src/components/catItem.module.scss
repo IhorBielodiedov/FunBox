@@ -1,0 +1,275 @@
+@import "../resources/scss/_variables.scss";
+.container {
+  width: 320px;
+  height: 480px;
+}
+.root {
+  border-color: $idle;
+  cursor: pointer;
+  @media only screen and (max-width: 320px) {
+    width: 280px;
+  }
+  .cardTitleSelectedHoverText {
+    display: none;
+  }
+  &:hover {
+    .cardCorner {
+      background: linear-gradient(
+        -45deg,
+        #f2f2f2,
+        #f2f2f2 28.5px,
+        $idleHover 0,
+        $idleHover 32px,
+        transparent 0
+      );
+    }
+    .cardLayout {
+      border-color: $idleHover;
+    }
+    .cardTitle {
+      border-color: $idleHover;
+    }
+    .weightCircle {
+      background: $idleHover;
+    }
+  }
+  .buyText {
+    display: inline;
+  }
+  .descText {
+    display: none;
+  }
+  .isOverText {
+    display: none;
+  }
+}
+.rootSelected {
+  border-color: $selected;
+  cursor: pointer;
+  @media only screen and (max-width: 320px) {
+    width: 280px;
+  }
+  .cardCorner {
+    background: linear-gradient(
+      -45deg,
+      #f2f2f2,
+      #f2f2f2 28.5px,
+      $selected 0,
+      $selected 32px,
+      transparent 0
+    );
+  }
+  .cardTitleSelectedHoverText {
+    display: none;
+  }
+  .weightCircle {
+    background: $selected;
+  }
+  .buyText {
+    display: none;
+  }
+  .descText {
+    display: inline;
+  }
+  .isOverText {
+    display: none;
+  }
+  &:hover {
+    .cardCorner {
+      background: linear-gradient(
+        -45deg,
+        #f2f2f2,
+        #f2f2f2 28.5px,
+        $selectedHover 0,
+        $selectedHover 32px,
+        transparent 0
+      );
+    }
+    .cardLayout {
+      border-color: $selectedHover;
+    }
+    .cardTitle {
+      border-color: $selectedHover;
+      .cardTitleText {
+        display: none;
+      }
+      .cardTitleSelectedHoverText {
+        display: inline;
+      }
+    }
+    .weightCircle {
+      background: $selectedHover;
+    }
+  }
+}
+.rootDisabled {
+  border-color: $unavailable;
+  color: $unavailable;
+  @media only screen and (max-width: 320px) {
+    width: 280px;
+  }
+  .cardTitleText {
+    color: $unavailable;
+  }
+  .cardImg {
+    opacity: 0.5;
+  }
+  .cardText {
+    color: $unavailable;
+  }
+  .cardCorner {
+    background: linear-gradient(
+      -45deg,
+      #f2f2f2,
+      #f2f2f2 28.5px,
+      $unavailable 0,
+      $unavailable 32px,
+      transparent 0
+    );
+  }
+  .cardTitleSelectedHoverText {
+    display: none;
+  }
+  .weightCircle {
+    background: $unavailable;
+  }
+  .buyText {
+    display: none;
+  }
+  .descText {
+    display: none;
+  }
+}
+.cardHeader {
+  display: flex;
+  height: 44px;
+  margin-bottom: -1px;
+  border-color: inherit;
+}
+.cardCorner {
+  position: relative;
+  width: 43px;
+  background: linear-gradient(
+    -45deg,
+    #f2f2f2,
+    #f2f2f2 28.5px,
+    $idle 0,
+    $idle 32px,
+    transparent 0
+  );
+}
+.cardTitle {
+  border: 4px solid;
+  border-color: inherit;
+  border-bottom: none;
+  border-left: none;
+  flex-grow: 1;
+  padding: 15px 0 0 8px;
+  border-radius: 0 12px 0 0;
+  background-color: #f2f2f2;
+  padding: 15px 0 0 8px;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+.cardLayout {
+  position: relative;
+  top: 0;
+  width: 320px;
+  height: 437px;
+  background-color: #f2f2f2;
+  border: 4px solid;
+  border-color: inherit;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 0 46px 25px;
+  @media only screen and (max-width: 320px) {
+    width: 280px;
+  }
+}
+.cardImg {
+  position: absolute;
+  background-image: url(../resources/Object.png);
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.cardName {
+  position: relative;
+  z-index: 10;
+  margin: 0 0 15px;
+  font-size: 48px;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: inherit;
+}
+.cardSubName {
+  font-size: 24px;
+  line-height: 28px;
+}
+.cardText {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  span {
+    font-weight: 700;
+  }
+}
+.weightCircle {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background: $idle;
+  color: #fff;
+  text-align: center;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  z-index: 2;
+  .cardWeigth {
+    position: relative;
+    top: 20px;
+    span {
+      font-size: 42px;
+      line-height: 22px;
+    }
+    div {
+      font-size: 21px;
+      line-height: 22px;
+    }
+  }
+}
+.cardFooter {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 14px;
+  color: #ffffff;
+  .buyText {
+    a {
+      text-decoration: none;
+      border-bottom: 1px dashed currentColor;
+      color: $idle;
+    }
+  }
+  .isOverText {
+    color: #ffff66;
+  }
+}

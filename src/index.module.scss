@@ -1,0 +1,8 @@
+@import "../node_modules/scss-reset/src/scss/_reset.scss";
+
+.page {
+  height: 100vh;
+  .mainContent {
+    background-image: url(./resources/bg.png);
+  }
+}

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Exo";
+  src: url("../fonts/Exo2.0-Thin.otf") format("opentype");
+}
+.app {
+  box-sizing: border-box;
+  height: 100vh;
+  .appContent {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-image: url(../resources/bg.png);
+  }
+}
+.title {
+  font-family: "Exo";
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #000000;
+}
+.cardList {
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 80px;
+}
