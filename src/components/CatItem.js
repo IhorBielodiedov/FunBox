@@ -58,7 +58,7 @@ const CatItem = ({
         <div className={styles.cardFooter}>
           <p className={styles.descText}>{description}</p>
           <p className={styles.buyText}>
-            Чего сидишь? Порадуй котэ, <a href="#">купи.</a>
+            Чего сидишь? Порадуй котэ, <span>купи.</span>
           </p>
           <p className={styles.isOverText}>{status}</p>
         </div>
